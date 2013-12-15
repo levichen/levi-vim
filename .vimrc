@@ -9,12 +9,17 @@ set autoindent
 set encoding=utf8
 set nobomb
 set nowrap
-set t_Co=256
+set hlsearch
 
+set runtimepath ^=~/.vim/bundle/ctrlp.vim
 set guifont=Ubuntu_Mono\12
 
-let g:molokai_original = 2 
+"let g:molokai_original = 2 
+colorscheme molokai
+set t_Co=256
 set background=dark
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+let Powerline_symbols = 'fancy'
 
 execute pathogen#infect()
 filetype plugin indent on
