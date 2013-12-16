@@ -1,5 +1,3 @@
-"the windows _vimrc setting
-
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
@@ -12,6 +10,8 @@ set expandtab
 set shiftwidth=4
 set shiftround
 set autoindent
+set nobackup
+set nowritebackup
 
 let $LANG="zh_TW.UTF-8"
 set langmenu=zh_tw.utf-8
@@ -28,7 +28,6 @@ set guifont=Consolas:h12
 colorscheme molokai
 set t_Co=256
 set background=dark
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 let Powerline_symbols = 'fancy'
 
 execute pathogen#infect()
