@@ -50,3 +50,5 @@ map! <C-P> :FufCoverageFile<CR>
 let g:AutoComplPop_IgnoreCaseOption=1
 set ignorecase
 let g:acp_behaviorKeywordCommand="\<C-x>\<C-o>"
+
+let mapleader=","
