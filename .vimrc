@@ -40,7 +40,7 @@ map <S-Tab> <
 map <C-P> :FufCoverageFile<CR>
 map! <C-P> :FufCoverageFile<CR>
 
-let g:acp_behaviorSnipmateLength = 1
+"let g:acp_behaviorSnipmateLength = 1
 
 let g:AutoComplPop_IgnoreCaseOption=1
 set ignorecase
