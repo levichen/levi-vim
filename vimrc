@@ -25,6 +25,7 @@ let Powerline_symbols = 'fancy'
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <F6> :qa<CR>
 
 "Ctrl+H, Ctrl+L to switch tab 
 map <C-H> <Esc>:tabprev<CR>
