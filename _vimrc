@@ -33,6 +33,7 @@ let Powerline_symbols = 'fancy'
 execute pathogen#infect()
 filetype plugin indent on
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <F6> :qa<CR>
 
 map <C-H> <Esc>:tabprev<CR>
 map <C-L> <Esc>:tabnext<CR>
@@ -49,9 +50,10 @@ map <S-Tab> <
 map <C-P> :FufCoverageFile<CR>
 map! <C-P> :FufCoverageFile<CR>
 
-let g:acp_behaviorSnipmateLength = 1
+"let g:acp_behaviorSnipmateLength = 1
 
-let g:AutoComplPop_IgnoreCaseOption=1
-set ignorecase
+"let g:AutoComplPop_IgnoreCaseOption=1
+"set ignorecase
 let g:acp_behaviorKeywordCommand="\<C-x>\<C-o>"
+let mapleader=","
 

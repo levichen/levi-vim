@@ -46,8 +46,7 @@ snippet f
 	}
 # method
 snippet m
-	${1:protected} function ${2:foo}()
-	{
+	${1:protected} function ${2:foo}() {
 		${0}
 	}
 # setter method
@@ -598,3 +597,18 @@ snippet tc
 		${0:code}
 	}
 
+# codeigniter
+snippet inputpost
+	$this->input->post('${1}')
+
+snippet tplvar
+	$this->tplVar['${1}']
+
+snippet layout
+	$this->layout->veiw('${1}', ${2})
+
+snippet thisf
+	$this->${1}(${2})
+
+snippet thismodel
+	$this->${1}->${2}(${3})
