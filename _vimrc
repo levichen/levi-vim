@@ -13,6 +13,9 @@ set autoindent
 set nobackup
 set nowritebackup
 
+set directory=.,d:\temp
+set ruler 
+
 let $LANG="zh_TW.UTF-8"
 set langmenu=zh_tw.utf-8
 
@@ -50,10 +53,13 @@ map <S-Tab> <
 map <C-P> :FufCoverageFile<CR>
 map! <C-P> :FufCoverageFile<CR>
 
-"let g:acp_behaviorSnipmateLength = 1
-
-"let g:AutoComplPop_IgnoreCaseOption=1
-"set ignorecase
-let g:acp_behaviorKeywordCommand="\<C-x>\<C-o>"
 let mapleader=","
 
+
+filetype plugin on  
+autocmd FileType python set omnifunc=pythoncomplete#Complete  
+autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
+autocmd FileType c set omnifunc=ccomplete#Complete  

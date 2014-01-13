@@ -197,3 +197,11 @@ snippet prop
 			configurable : ${0:boolean}
 		}
 	);
+	
+snippet on
+	$('${1:obj}').on('${2:events}', function () {
+		${0:// event handler}
+	});
+	
+snippet val
+	${'${1:obj}'}.val('${2:text}')
