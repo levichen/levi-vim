@@ -16,8 +16,12 @@ set nowritebackup
 set directory=.,d:\temp
 set ruler 
 
-let $LANG="zh_TW.UTF-8"
-set langmenu=zh_tw.utf-8
+"let $LANG="zh_TW.UTF-8"
+"set langmenu=zh_tw.utf-8
+
+let $LANG="en_US.UTF-8"
+set langmenu=en_US.utf-8
+
 
 set encoding=utf8
 set nobomb
@@ -43,6 +47,12 @@ map <C-L> <Esc>:tabnext<CR>
 
 imap <C-H> <Esc>:tabprev<CR>
 imap <C-L> <Esc>:tabnext<CR>
+
+
+"remap cmd + w to close tab
+map <D-w> <Esc>:tabclose<CR>
+
+"remap cmd + n to new tab
 
 map <C-A> ggVG
 map <C-A> <Esc>ggVG
