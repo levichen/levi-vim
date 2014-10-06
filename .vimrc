@@ -10,6 +10,8 @@ set encoding=utf8
 set nobomb
 set nowrap
 set hlsearch
+set mouse=nv
+set nocp
 
 set runtimepath ^=~/.vim/bundle/ctrlp.vim
 set guifont=Ubuntu_Mono\12
