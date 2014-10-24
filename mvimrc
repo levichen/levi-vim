@@ -37,8 +37,8 @@ imap <C-H> <Esc>:tabprev<CR>
 imap <C-L> <Esc>:tabnext<CR>
 
 "choose all page
-map <C-A> ggVG
-map <C-A> <Esc>ggVG
+map <D-A> ggVG
+map <D-A> <Esc>ggVG
 
 "choose code use tab to indent
 map <Tab> >
