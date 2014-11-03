@@ -1,6 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Applications/MAMP/htdocs/yii-1.1.15/demos/blog'
-let g:netrw_dirhist_2='/Applications/MAMP/htdocs/yii-1.1.15'
-let g:netrw_dirhist_3='/Applications/MAMP/htdocs/yii-1.1.15/blog'
-let g:netrw_dirhist_4='/Applications/MAMP/htdocs/appgen'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Applications/MAMP/htdocs/honda_web'

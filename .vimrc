@@ -14,13 +14,14 @@ set mouse=nv
 set nocp
 
 set runtimepath ^=~/.vim/bundle/ctrlp.vim
-set guifont=Ubuntu_Mono\12
+"set guifont=Ubuntu_Mono\12
 
 "change color
 colorscheme molokai
 set t_Co=256
 set background=dark
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+"set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h18 
+set guifont=Menlo\ Regular:h16
 let Powerline_symbols = 'fancy'
 
 "load pathogen plugin to manger plugin
@@ -36,8 +37,8 @@ imap <C-H> <Esc>:tabprev<CR>
 imap <C-L> <Esc>:tabnext<CR>
 
 "choose all page
-map <C-A> ggVG
-map <C-A> <Esc>ggVG
+map <D-A> ggVG
+map <D-A> <Esc>ggVG
 
 "choose code use tab to indent
 map <Tab> >
@@ -50,9 +51,21 @@ map! <C-P> :FufCoverageFile<CR>
 let mapleader=","
 
 filetype plugin on  
-autocmd FileType python set omnifunc=pythoncomplete#Complete  
-autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
-autocmd FileType c set omnifunc=ccomplete#Complete  
+setl omnifunc=nullcomplete#Complete
+autocmd FileType * setl omnifunc=nullcomplete#Complete
+autocmd FileType python setl omnifunc=pythoncomplete#Complete
+autocmd FileType javascript setl omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html setl omnifunc=htmlcomplete#CompleteTags noci
+autocmd FileType css setl omnifunc=csscomplete#CompleteCSS noci
+autocmd FileType xml setl omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
+autocmd FileType c setl omnifunc=ccomplete#Complete
+"autocmd FileType python set omnifunc=pythoncomplete#Complete  
+"autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
+"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
+"autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
+"autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
+"autocmd FileType c set omnifunc=ccomplete#Complete  
+"autocmd FileType ruby set omnifunc=rubycomplete@Complete
+
+set clipboard=unnamed
