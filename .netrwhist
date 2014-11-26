@@ -1,8 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Applications/MAMP/htdocs/honda_web'
-let g:netrw_dirhist_2='/Applications/MAMP/htdocs/appgenWeb'
-let g:netrw_dirhist_3='/Applications/MAMP/htdocs/appgen'
-let g:netrw_dirhist_4='/Users/levichen/tmp/yii-1.1.15.022a51'
-let g:netrw_dirhist_5='/Applications/MAMP/logs'
-let g:netrw_dirhist_6='/Users/levichen/.vim/bundle/vim-css-color/after'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/levichen'
+let g:netrw_dirhist_2='/Users/levichen/node/node-lessons/.git'
+let g:netrw_dirhist_3='/Users/levichen/Documents/push_server_log/tmp'
+let g:netrw_dirhist_4='/Users/levichen/.vim'
