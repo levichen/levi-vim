@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/levichen'
-let g:netrw_dirhist_2='/Users/levichen/node/node-lessons/.git'
-let g:netrw_dirhist_3='/Users/levichen/Documents/push_server_log/tmp'
-let g:netrw_dirhist_4='/Users/levichen/.vim'

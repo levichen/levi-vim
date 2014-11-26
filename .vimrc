@@ -69,3 +69,7 @@ autocmd FileType c setl omnifunc=ccomplete#Complete
 "autocmd FileType ruby set omnifunc=rubycomplete@Complete
 
 set clipboard=unnamed
+
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
