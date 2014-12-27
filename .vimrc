@@ -13,6 +13,9 @@ set hlsearch
 set mouse=nv
 set nocp
 
+let g:EditorConfig_core_mode = 'external_command'
+let g:EditorConfig_verbose=1
+
 set runtimepath ^=~/.vim/bundle/ctrlp.vim
 "set guifont=Ubuntu_Mono\12
 
@@ -41,8 +44,12 @@ map <D-A> ggVG
 map <D-A> <Esc>ggVG
 
 "choose code use tab to indent
-map <Tab> >
-map <S-Tab> <
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
 
 "search file
 map <C-P> :FufCoverageFile<CR>
@@ -51,22 +58,12 @@ map! <C-P> :FufCoverageFile<CR>
 let mapleader=","
 
 filetype plugin on  
-setl omnifunc=nullcomplete#Complete
-autocmd FileType * setl omnifunc=nullcomplete#Complete
-autocmd FileType python setl omnifunc=pythoncomplete#Complete
-autocmd FileType javascript setl omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html setl omnifunc=htmlcomplete#CompleteTags noci
-autocmd FileType css setl omnifunc=csscomplete#CompleteCSS noci
-autocmd FileType xml setl omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php setl omnifunc=phpcomplete#CompletePHP
-autocmd FileType c setl omnifunc=ccomplete#Complete
-"autocmd FileType python set omnifunc=pythoncomplete#Complete  
-"autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
-"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
-"autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
-"autocmd FileType c set omnifunc=ccomplete#Complete  
-"autocmd FileType ruby set omnifunc=rubycomplete@Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete  
+autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
+autocmd FileType c set omnifunc=ccomplete#Complete  
 
 set clipboard=unnamed
 
