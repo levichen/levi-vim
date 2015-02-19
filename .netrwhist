@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/levichen/Google 雲端硬碟/node/node-asqs-poc'
+let g:netrw_dirhist_2='/Users/levichen/tmp/elk/elasticsearch-1.4.1/data/elasticsearch/nodes/0/indices/91_mobile_log/_state'
+let g:netrw_dirhist_3='/Users/levichen/Google 雲端硬碟/node/node-cluster'
+let g:netrw_dirhist_4='/Users/levichen/Google 雲端硬碟/node/node-asqs-poc'
+let g:netrw_dirhist_5='/Library/LaunchDaemons'
+let g:netrw_dirhist_6='/Users/levichen/nexus-3.0.0-b2014101001/data/log'
+let g:netrw_dirhist_7='/Library/LaunchDaemons'
+let g:netrw_dirhist_8='/Users/levichen/nexus-3.0.0-b2014101001/bin'
+let g:netrw_dirhist_9='/Users/levichen/.vim'
