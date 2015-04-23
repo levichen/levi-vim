@@ -5,7 +5,7 @@ current=`pwd`
 echo $current
 echo $HOME
 
-if [ -L "$HOME/.vim" ] || [ -f "$HOME/.vim" ]
+if [ -L "$HOME/.vim" ] || [ -d "$HOME/.vim" ]
 then
    mv $HOME/.vim $HOME/.vim.bak
 fi
